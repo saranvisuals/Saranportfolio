@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Saran S — Video Producer · Shoot · Edit · AI</title>
+<meta name="description" content="Saran S — Video Producer from Bangalore, India. I shoot, I edit, and I generate with AI. 30M+ views across brands and creators." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Kalam:wght@300;400;700&family=Patrick+Hand&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== Global sketch filter (hand-drawn wobble) ===== -->
+<svg class="svg-defs" aria-hidden="true">
+  <defs>
+    <filter id="pencil">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="pencil-strong">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="rough-paper">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.04 0"/>
+    </filter>
+  </defs>
+</svg>
+
+<!-- ===== Navbar ===== -->
+<header class="nav" id="nav">
+  <a href="#top" class="brand">Saran<span class="dot">.</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#longform">Long-form</a>
+    <a href="#work">Reels</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact" class="nav-cta">Hire me</a>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+
+<main id="top">
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-text reveal">
+      <p class="eyebrow">✎ Video Producer · Bangalore, India</p>
+      <h1 class="hero-name">Saran&nbsp;S</h1>
+      <p class="hero-tag">
+        I <span class="scribble">shoot</span>. I <span class="scribble">edit</span>. I <span class="scribble">generate with AI</span>.
+      </p>
+      <p class="hero-sub">
+        A self-taught filmmaker who has been creating since 15 — turning ideas into
+        scroll-stopping video for brands, coaches and creators. Story first, craft always.
+      </p>
+      <div class="hero-actions">
+        <a href="#longform" class="btn btn-ink">See the work →</a>
+        <a href="#contact" class="btn btn-line">Let's talk</a>
+      </div>
+      <div class="hero-stats">
+        <div><b data-count="30">0</b><span>Million+ views</span></div>
+        <div><b data-count="200">0</b><span>Clients served</span></div>
+        <div><b data-count="5">0</b><span>Years creating</span></div>
+      </div>
+    </div>
+
+    <div class="hero-art reveal">
+      <!-- Profile portrait (pencil-framed). Falls back to the doodle if the
+           image file is missing. Save your photo to assets/saran.jpg -->
+      <figure class="portrait-wrap sketchy">
+        <img class="portrait" src="assets/saran.jpg" alt="Saran S — Video Producer"
+             onerror="this.closest('.portrait-wrap').classList.add('no-img'); this.remove();" />
+        <span class="portrait-corner"></span>
+        <span class="portrait-badge">Saran S ✎</span>
+      </figure>
+      <!-- Hand-drawn camera / creator doodle (fallback) -->
+      <svg viewBox="0 0 320 340" class="doodle sketchy" aria-hidden="true">
+        <g fill="none" stroke="#2b2b2b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <!-- camera body -->
+          <rect x="55" y="150" width="210" height="130" rx="14"/>
+          <path d="M110 150 l14 -26 h72 l14 26"/>
+          <circle cx="160" cy="215" r="42"/>
+          <circle cx="160" cy="215" r="26"/>
+          <circle cx="160" cy="215" r="11"/>
+          <rect x="220" y="168" width="30" height="16" rx="4"/>
+          <circle cx="86" cy="172" r="4"/>
+          <!-- film strip -->
+          <path d="M40 60 h240 v40 h-240 z" transform="rotate(-6 160 80)"/>
+          <g transform="rotate(-6 160 80)">
+            <line x1="60" y1="60" x2="60" y2="100"/>
+            <line x1="100" y1="60" x2="100" y2="100"/>
+            <line x1="140" y1="60" x2="140" y2="100"/>
+            <line x1="180" y1="60" x2="180" y2="100"/>
+            <line x1="220" y1="60" x2="220" y2="100"/>
+            <line x1="260" y1="60" x2="260" y2="100"/>
+          </g>
+          <!-- sparkles / AI -->
+          <path d="M280 130 l6 14 14 6 -14 6 -6 14 -6 -14 -14 -6 14 -6 z"/>
+          <path d="M36 250 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z"/>
+          <path d="M250 300 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4 z"/>
+        </g>
+      </svg>
+      <span class="art-note">shot · edited · AI-crafted</span>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll down">
+    <span>scroll</span>
+    <svg viewBox="0 0 24 40" fill="none" stroke="#2b2b2b" stroke-width="2"><path d="M12 4 v28 M5 25 l7 8 7 -8"/></svg>
+  </a>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section about">
+  <h2 class="sec-title reveal">About Me <svg class="underline" viewBox="0 0 300 20"><path d="M4 12 C 80 4, 220 4, 296 10" fill="none" stroke="#c0392b" stroke-width="3"/></svg></h2>
+  <div class="about-wrap">
+    <p class="about-lead reveal">
+      Fuelled by a love for storytelling, I craft seamless, visually striking video for
+      corporate, entertainment and social platforms — work that actually resonates with the
+      people it's made for. What started as a curious 15-year-old editing on a hand-me-down
+      laptop is now a full production toolkit: <b>I shoot it, I cut it, and increasingly I
+      generate it with AI.</b>
+    </p>
+    <div class="triad">
+      <article class="card reveal">
+        <div class="card-ico sketchy">
+          <svg viewBox="0 0 60 60" fill="none" stroke="#2b2b2b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="8" y="18" width="34" height="26" rx="4"/><path d="M42 26 l12 -6 v20 l-12 -6 z"/><circle cx="24" cy="31" r="2"/>
+          </svg>
+        </div>
+        <h3>I Shoot</h3>
+        <p>Multicam shoots, interviews, weddings, product & brand films. Composition, lighting and coverage planned to cut clean.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-ico sketchy">
+          <svg viewBox="0 0 60 60" fill="none" stroke="#2b2b2b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="10" y="12" width="40" height="36" rx="4"/><line x1="10" y1="22" x2="50" y2="22"/><line x1="20" y1="12" x2="20" y2="48"/><line x1="40" y1="12" x2="40" y2="48"/><path d="M27 30 l10 6 -10 6 z"/>
+          </svg>
+        </div>
+        <h3>I Edit</h3>
+        <p>Dynamic edits, color grading, motion graphics, 3D, sound design & mix. Premiere Pro · After Effects · Photoshop.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-ico sketchy">
+          <svg viewBox="0 0 60 60" fill="none" stroke="#2b2b2b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M30 10 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5 z"/><path d="M48 34 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5 z"/>
+          </svg>
+        </div>
+        <h3>I Generate with AI</h3>
+        <p>AI-assisted b-roll, visuals and concepts — blending generative tools with real craft to move faster and dream bigger.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS STRIP ===== -->
+<section class="stats-strip">
+  <div class="stat reveal"><b>30M+</b><span>Views generated</span></div>
+  <div class="stat reveal"><b>200+</b><span>Individual clients</span></div>
+  <div class="stat reveal"><b>30+</b><span>Wedding films</span></div>
+  <div class="stat reveal"><b>20+</b><span>Podcasts edited</span></div>
+  <div class="stat reveal"><b>100+</b><span>Posters designed</span></div>
+</section>
+
+<!-- ===== LONG FORM (feature first) ===== -->
+<section id="longform" class="section longform">
+  <h2 class="sec-title reveal">Long-form Feature <svg class="underline" viewBox="0 0 320 20"><path d="M4 12 C 90 4, 240 4, 316 10" fill="none" stroke="#c0392b" stroke-width="3"/></svg></h2>
+  <p class="sec-note reveal">Doctor Towels — website brand video. Shot, edited & finished end-to-end.</p>
+  <div class="yt-frame reveal sketchy">
+    <div class="yt-ratio">
+      <button class="yt-poster" type="button"
+        data-video-src="assets/doctor-towels.mp4"
+        aria-label="Play Doctor Towels website video">
+        <img src="assets/doctor-towels-thumbnail.jpg"
+          alt="Doctor Towels website video thumbnail" />
+        <span class="yt-play" aria-hidden="true">
+          <svg viewBox="0 0 68 48"><path d="M66.5 7.5a8.2 8.2 0 0 0-5.8-5.8C55.6.3 34 .3 34 .3S12.4.3 7.3 1.7a8.2 8.2 0 0 0-5.8 5.8C.1 12.6.1 24 .1 24s0 11.4 1.4 16.5a8.2 8.2 0 0 0 5.8 5.8C12.4 47.7 34 47.7 34 47.7s21.6 0 26.7-1.4a8.2 8.2 0 0 0 5.8-5.8C67.9 35.4 67.9 24 67.9 24s0-11.4-1.4-16.5Z"/><path class="yt-play-triangle" d="m27 34 18-10-18-10Z"/></svg>
+        </span>
+      </button>
+    </div>
+    <a class="yt-fallback" href="https://www.youtube.com/watch?v=ckUrZ4c-Q0Q"
+      target="_blank" rel="noopener">Watch on YouTube ↗</a>
+  </div>
+</section>
+
+<!-- ===== WORK / REELS (short-form) ===== -->
+<section id="work" class="section work">
+  <h2 class="sec-title reveal">Short-form Reels <svg class="underline" viewBox="0 0 300 20"><path d="M4 12 C 80 4, 220 4, 296 10" fill="none" stroke="#c0392b" stroke-width="3"/></svg></h2>
+  <p class="sec-note reveal">Scroll-stopping short-form work. Tap any frame to watch on Instagram.</p>
+  <div class="reel-grid" id="reelGrid"><!-- injected by script.js --></div>
+
+  <div class="ig-links reveal">
+    <h3>All reels on Instagram</h3>
+    <p class="sec-note" style="margin-top:2px">The reels above, in order — straight links:</p>
+    <ol class="link-list" id="linkList"><!-- injected by script.js --></ol>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section skills">
+  <h2 class="sec-title reveal">Toolkit <svg class="underline" viewBox="0 0 220 20"><path d="M4 12 C 60 4, 160 4, 216 10" fill="none" stroke="#c0392b" stroke-width="3"/></svg></h2>
+  <div class="skills-cols">
+    <div class="reveal">
+      <h4>Craft</h4>
+      <ul class="tags tags-icon">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="8.5" width="19" height="11" rx="1.5"/><path d="M2.8 8.5 5 4.2l3.6 1M8.6 5.2 13 6.4M13 6.4l4.4 1.2"/><path d="M11 12l3.5 2-3.5 2z"/></svg>
+          Video editing
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h3.5l2.5-7 4 14 2.5-7H22"/></svg>
+          Motion graphics
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4l11 4V6L3 10z"/><path d="M14 8.4a3.6 3.6 0 0 1 0 7.2"/><path d="M6 14.6V19a1 1 0 0 0 1 1h1.4a1 1 0 0 0 1-1v-2.7"/></svg>
+          Direction
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4v16M12 4v16M18 4v16"/><rect x="4" y="7.5" width="4" height="3" rx="1"/><rect x="10" y="13" width="4" height="3" rx="1"/><rect x="16" y="6" width="4" height="3" rx="1"/></svg>
+          Sound mixing
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 4.9L18.8 9.8 13.9 11.7 12 16.6l-1.9-4.9L5.2 9.8 10.1 7.9z"/><path d="M18.5 15l.7 1.9 1.9.7-1.9.7-.7 1.9-.7-1.9-1.9-.7 1.9-.7z"/></svg>
+          AI generation
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 5 19l7-3 7 3z"/><path d="M12 2v13"/><circle cx="12" cy="18" r="1"/></svg>
+          Graphic design
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.4-5-1.4-7.5 0V19c2.5-1.4 5.5-1.4 7.5 0 2-1.4 5-1.4 7.5 0V6c-2.5-1.4-5.5-1.4-7.5 0z"/><path d="M12 6v13"/></svg>
+          Story telling
+        </li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <h4>Software</h4>
+      <ul class="tags">
+        <li>Premiere Pro</li><li>After Effects</li><li>Photoshop</li>
+        <li>AI video tools</li>
+      </ul>
+      <h4 style="margin-top:26px">Trusted by</h4>
+      <ul class="tags brands">
+        <li>Rohan Krishstinger <em>380k+</em></li><li>Doctor Towels</li>
+        <li>Leap Scholar</li><li>Sayai Tech</li><li>A1 Chips</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section contact">
+  <div class="contact-card reveal sketchy">
+    <h2>Let's make something<br/>worth watching.</h2>
+    <p>Available for brand films, short-form, weddings, podcasts & AI-driven content.</p>
+    <div class="contact-actions">
+      <a class="btn btn-ink" href="mailto:saranvisuals@gmail.com">saranvisuals@gmail.com</a>
+      <a class="btn btn-line" href="tel:+918838312508">+91 88383 12508</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Saran S · Video Producer · Bangalore, India</p>
+  <p class="tiny">Shot · Edited · Generated with AI ✎</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
